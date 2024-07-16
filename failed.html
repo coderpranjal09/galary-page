@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewkoof Bachche Loyalty Test!</title>
+  <style>
+  
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.laughing-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  animation: laugh 5s ease-in-out infinite;
+}
+
+.laughing {
+  width: 150px;
+  animation: appear 1s ease-in-out forwards;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #666;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@keyframes laugh {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .laughing-container {
+    width: 70%;
+  }
+
+  .laughing {
+    width: 100px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Abe Bewkoof Bachche! Loyalty Test Main Fail Ho Gaye!</h1>
+    <div class="laughing-container">
+      <img src="" alt="Laughing Face 1" class="laughing" >
+      <img src="laughing2.png" alt="Laughing Face 2" class="laughing" />
+      <img src="laughing3.png" alt="Laughing Face 3" class="laughing" />
+    </div>
+    <p>Lagta hai tum loyalty test main fail ho gaye! Lekin chinta mat karo, aaj hum tumhe hasana sikhaenge!</p>
+   
+  </div>
+
+  <script >
+    const playAnimationBtn = document.getElementById("play-animation");
+
+playAnimationBtn.addEventListener("click", function() {
+  // Add your animation logic here (e.g., drawing something on the screen)
+  console.log("Play animation!"); // Replace this with your actual animation code
+});
+
+  </script>
+</body>
+</html>
